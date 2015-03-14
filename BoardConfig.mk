@@ -36,11 +36,11 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 # Kernel Configs
 TARGET_KERNEL_SOURCE := kernel/samsung/trlte
-TARGET_KERNEL_CONFIG := apq8084_sec_defconfig
-TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_trlte_twrp_defconfig
-VARIANT_CONFIG := apq8084_sec_trlte_twrp_defconfig
-TIMA_DEFCONFIG := tima_defconfig
+TARGET_KERNEL_CONFIG := exynos5433-twrp_defconfig
+TARGET_KERNEL_SELINUX_CONFIG := 
+TARGET_KERNEL_VARIANT_CONFIG := 
+VARIANT_CONFIG := 
+TIMA_DEFCONFIG := 
 
 #TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun%d/file
 
