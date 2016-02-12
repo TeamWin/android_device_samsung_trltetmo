@@ -8,14 +8,8 @@ $(call inherit-product-if-exists, vendor/samsung/trltetmo/trltetmo-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += device/samsung/trltetmo/overlay
 
 LOCAL_PATH := device/samsung/trltetmo
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := $(LOCAL_PATH)/kernAl
-else
-	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
+PRODUCT_PACKAGES += dtbToolTW
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstab.qcom:recovery/root/fstab.qcom
